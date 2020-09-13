@@ -17,11 +17,6 @@ data class Item(
         val weight: Double
 )
 
-data class Pack(
-        val totalPieces: Int,
-        val totalWeight: Double
-)
-
 fun List<Item>.pack(maxPieces: Int, maxWeight: Double) {
     var position = 0;
     var pack = 0;
